@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <form action="{% url 'articles:update' id=article.id %}" class="mt-4" method="POST">
+    <form action="{% url 'articles:update' id=article.id$ %}" class="mt-4" method="POST">
         {% csrf_token %}
         <div class="mb-3">
             <label for="title" class="form-label">title</label>
